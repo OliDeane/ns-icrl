@@ -1,0 +1,18 @@
+<routes>
+    <vType accel="1.0" decel="5.0" id="Car" length="2.0" maxSpeed="10.0" sigma="0.0" />
+    
+    <route id="main_left_to_main_right" edges="main_left_to_junction junction_to_main_right"/>
+    <route id="main_right_to_main_left" edges="main_right_to_junction junction_to_main_left"/>
+    <route id="main_left_to_side" edges="main_left_to_junction junction_to_side"/>
+    <route id="main_right_to_side" edges="main_right_to_junction junction_to_side"/>
+    <route id="side_to_main_left" edges="side_to_junction junction_to_main_left"/>
+    <route id="side_to_main_right" edges="side_to_junction junction_to_main_right"/>
+
+    <flow id="main_l_to_r" color="1,0,0"  begin="0" end= "7200" probability="0.02" type="Car" route="main_left_to_main_right"/>
+    <flow id="main_r_to_l" color="1,0,0"  begin="0" end= "7200" probability="0.02" type="Car" route="main_right_to_main_left"/>
+    <flow id="main_l_to_side" color="1,0,0"  begin="0" end= "7200" probability="0.02" type="Car" route="main_left_to_side"/>
+    <flow id="main_r_to_side" color="1,0,0"  begin="0" end= "7200" probability="0.02" type="Car" route="main_right_to_side"/>
+    <flow id="side_to_main_l" color="1,0,0"  begin="0" end= "7200" probability="0.02" type="Car" route="side_to_main_left"/>
+    <flow id="side_to_main_r" color="1,0,0"  begin="0" end= "7200" probability="0.02" type="Car" route="side_to_main_right"/>
+    
+</routes>

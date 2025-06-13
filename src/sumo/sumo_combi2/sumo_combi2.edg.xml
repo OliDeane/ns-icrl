@@ -1,0 +1,7 @@
+<edges>
+    <edge endOffset="0" from="w" to="j1" id="w_to_j1" spreadType="center"/>
+    <edge endOffset="2" from="s" to="j1" id="s_to_j1" spreadType="center"/>
+    <edge endOffset="0" from="j1" to="j2" id="j1_to_j2" spreadType="center"/>
+    <edge endOffset="0" from="j2" to="e" id="j2_to_e" spreadType="center"/>
+    <edge endOffset="2" from="n" to="j2" id="n_to_j2" spreadType="center"/>
+</edges>

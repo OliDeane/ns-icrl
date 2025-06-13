@@ -1,0 +1,17 @@
+<configuration>
+    <input>
+        <net-file value="bidir_4way_junction.net.xml"/>
+        <route-files value="bidir_4way_junction.rou.xml"/>
+        <gui-settings-file value="bidir_4way_junction.settings.xml"/>
+    </input>
+    <time>
+        <begin value="0"/>
+        <end value="10000"/>
+    </time>
+    <output>
+        <fcd-output value="sim.xml" />
+        <additional>
+            <timedEvent type="SaveTLSStates" source="junction" dest="sim_tls.xml"/>
+        </additional>
+    </output>
+</configuration>

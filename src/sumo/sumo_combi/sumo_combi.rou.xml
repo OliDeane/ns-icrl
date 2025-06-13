@@ -1,0 +1,43 @@
+<routes>
+    <vType accel="0.5" decel="5.0" id="Car" length="2.0" maxSpeed="50.0" sigma="0.0" />
+    
+    <route id="route_w_n" edges="w0_to_w1 w1_to_junction junction_to_n1 n1_to_n0"/>
+    <route id="route_w_e" edges="w0_to_w1 w1_to_junction junction_to_e1 e1_to_e0"/>
+    <route id="route_w_s" edges="w0_to_w1 w1_to_junction junction_to_s1 s1_to_s0"/>
+
+    <route id="route_e_n" edges="e0_to_e1 e1_to_junction junction_to_n1 n1_to_n0"/>
+    <route id="route_e_w" edges="e0_to_e1 e1_to_junction junction_to_w1 w1_to_w0"/>
+    <route id="route_e_s" edges="e0_to_e1 e1_to_junction junction_to_s1 s1_to_s0"/>
+
+    <route id="route_s_n" edges="n0_to_n1 n1_to_junction junction_to_n1 n1_to_n0"/>
+    <route id="route_s_e" edges="n0_to_n1 n1_to_junction junction_to_e1 e1_to_e0"/>
+    <route id="route_s_w" edges="n0_to_n1 n1_to_junction junction_to_w1 w1_to_w0"/>
+
+    <route id="route_n_w" edges="n0_to_n1 n1_to_junction junction_to_w1 w1_to_w0"/>
+    <route id="route_n_e" edges="n0_to_n1 n1_to_junction junction_to_e1 e1_to_e0"/>
+    <route id="route_n_s" edges="n0_to_n1 n1_to_junction junction_to_s1 s1_to_s0"/>
+
+    <route id="route_w_s_fast" edges="w0_to_w1 w1_to_sw sw_to_s1 s1_to_s0" />
+    <route id="route_s_e_fast" edges="s0_to_s1 s1_to_se se_to_e1 e1_to_e0" />
+    <route id="route_e_n_fast" edges="e0_to_e1 e1_to_ne ne_to_n1 n1_to_n0" />
+    <route id="route_n_w_fast" edges="n0_to_n1 n1_to_nw nw_to_w1 w1_to_w0" />
+
+    <flow id="type12" color="1,0,0"  begin="0" end= "7200" probability="0.01" type="Car" route="route_w_n" />
+    <flow id="type13" color="1,0,0"  begin="0" end= "7200" probability="0.01" type="Car" route="route_w_e" />
+    <flow id="type14" color="1,0,0"  begin="0" end= "7200" probability="0.01" type="Car" route="route_w_s" />
+    <flow id="type21" color="0,1,0"  begin="0" end= "7200" probability="0.01" type="Car" route="route_e_n" />
+    <flow id="type23" color="0,1,0"  begin="0" end= "7200" probability="0.01" type="Car" route="route_e_w" />
+    <flow id="type24" color="0,1,0"  begin="0" end= "7200" probability="0.01" type="Car" route="route_e_s" />
+    <flow id="type31" color="0,0,1"  begin="0" end= "7200" probability="0.01" type="Car" route="route_s_n" />
+    <flow id="type32" color="0,0,1"  begin="0" end= "7200" probability="0.01" type="Car" route="route_s_e" />
+    <flow id="type34" color="0,0,1"  begin="0" end= "7200" probability="0.01" type="Car" route="route_s_w" />
+    <flow id="type41" color="1,1,0"  begin="0" end= "7200" probability="0.01" type="Car" route="route_n_w" />
+    <flow id="type42" color="1,1,0"  begin="0" end= "7200" probability="0.01" type="Car" route="route_n_e" />
+    <flow id="type43" color="1,1,0"  begin="0" end= "7200" probability="0.01" type="Car" route="route_n_s" />
+
+    <flow id="fast_w_s" color="1,1,0"  begin="0" end= "7200" probability="0.05" type="Car" route="route_w_s_fast" />
+    <flow id="fast_s_e" color="1,1,0"  begin="0" end= "7200" probability="0.05" type="Car" route="route_s_e_fast" />
+    <flow id="fast_e_n" color="1,1,0"  begin="0" end= "7200" probability="0.05" type="Car" route="route_e_n_fast" />
+    <flow id="fast_n_w" color="1,1,0"  begin="0" end= "7200" probability="0.05" type="Car" route="route_n_w_fast" />
+
+</routes>

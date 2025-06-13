@@ -1,0 +1,7 @@
+<edges>
+    <edge endOffset="0" from="hor_left" to="junction" id="hor_left_to_junction" spreadType="center"/>
+    <edge endOffset="0" from="ver_down" to="junction" id="ver_down_to_junction" spreadType="center"/>
+    <edge endOffset="0" from="ver_up" to="junction" id="ver_up_to_junction" spreadType="center"/>
+
+    <edge endOffset="0" from="junction" to="hor_right" id="junction_to_hor_right" spreadType="center"/>
+</edges>

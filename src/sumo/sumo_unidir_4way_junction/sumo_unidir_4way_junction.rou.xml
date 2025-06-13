@@ -1,0 +1,13 @@
+<routes>
+    <vType accel="1.0" decel="5.0" id="Car" length="2.0" maxSpeed="15.0" sigma="0.0" />
+    
+    <route id="route1" edges="hor_left_to_junction junction_to_hor_right"/>
+    <route id="route2" edges="ver_down_to_junction junction_to_hor_right"/>
+    <route id="route3" edges="ver_up_to_junction junction_to_hor_right"/>
+
+    <!--<vehicle depart="1" id="veh0" route="route12" type="Car" />-->
+
+    <flow id="type12" color="1,0,0"  begin="0" end= "7200" probability="0.05" type="Car" route="route1" />
+    <flow id="type13" color="0,1,0"  begin="0" end= "7200" probability="0.05" type="Car" route="route2" />
+    <flow id="type34" color="0,0,1"  begin="0" end= "7200" probability="0.05" type="Car" route="route3" />
+</routes>

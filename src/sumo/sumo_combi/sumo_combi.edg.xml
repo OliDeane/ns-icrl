@@ -1,0 +1,34 @@
+<edges>
+    <edge endOffset="8" from="w1" to="junction" id="w1_to_junction" />
+    <edge endOffset="8" from="e1" to="junction" id="e1_to_junction" />
+    <edge endOffset="8" from="s1" to="junction" id="s1_to_junction" />
+    <edge endOffset="8" from="n1" to="junction" id="n1_to_junction" />
+
+    <edge endOffset="8" from="junction" to="w1" id="junction_to_w1" />
+    <edge endOffset="8" from="junction" to="e1" id="junction_to_e1" />
+    <edge endOffset="8" from="junction" to="s1" id="junction_to_s1" />
+    <edge endOffset="8" from="junction" to="n1" id="junction_to_n1" />
+
+    <edge from="w0" to="w1" id="w0_to_w1" />
+    <edge from="w1" to="w0" id="w1_to_w0" />
+    <edge from="e0" to="e1" id="e0_to_e1" />
+    <edge from="e1" to="e0" id="e1_to_e0" />
+    <edge from="s0" to="s1" id="s0_to_s1" />
+    <edge from="s1" to="s0" id="s1_to_s0" />
+    <edge from="n0" to="n1" id="n0_to_n1" />
+    <edge from="n1" to="n0" id="n1_to_n0" />
+
+    <!--<edge from="w1" to="s1" id="w1_to_s1" />--> 
+    <!--<edge from="s1" to="e1" id="s1_to_e1" />-->
+    <edge from="n1" to="nw" id="n1_to_nw" />
+    <edge from="nw" to="w1" id="nw_to_w1" />
+
+    <edge from="e1" to="ne" id="e1_to_ne" />
+    <edge from="ne" to="n1" id="ne_to_n1" />
+
+    <edge from="s1" to="se" id="s1_to_se" />
+    <edge from="se" to="e1" id="se_to_e1" />
+
+    <edge from="w1" to="sw" id="w1_to_sw" />
+    <edge from="sw" to="s1" id="sw_to_s1" />      
+</edges>

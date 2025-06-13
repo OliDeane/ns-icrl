@@ -1,0 +1,6 @@
+<nodes>
+    <node id="main_left" x="0.0" y="30.0" />
+    <node id="junction" x="30.0" y="30.0" type="right_before_left" />
+    <node id="main_right" x="60.0" y="30.0" />
+    <node id="side" x="30.0" y="0.0" />
+</nodes>

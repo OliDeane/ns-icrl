@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-04-29 10:41:59 by Eclipse SUMO netconvert Version 1.19.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <node-files value="sumo_unidir_3way_junction.nod.xml"/>
+        <edge-files value="sumo_unidir_3way_junction.edg.xml"/>
+    </input>
+
+    <output>
+        <output-file value="sumo_unidir_3way_junction.net.xml"/>
+    </output>
+
+</configuration>
+-->
+
+<net version="1.16" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="0.00,0.00" convBoundary="0.00,0.00,70.00,50.00" origBoundary="0.00,0.00,70.00,50.00" projParameter="!"/>
+
+    <edge id=":junction_0" function="internal">
+        <lane id=":junction_0_0" index="0" speed="6.51" length="9.03" shape="31.60,42.80 31.95,45.25 33.00,47.00 34.75,48.05 37.20,48.40"/>
+    </edge>
+    <edge id=":junction_1" function="internal">
+        <lane id=":junction_1_0" index="0" speed="13.89" length="11.20" shape="26.00,48.40 37.20,48.40"/>
+    </edge>
+
+    <edge id="junction_to_main" from="junction" to="main_end" priority="-1">
+        <lane id="junction_to_main_0" index="0" speed="13.89" length="32.80" shape="37.20,48.40 70.00,48.40"/>
+    </edge>
+    <edge id="main_to_junction" from="main_start" to="junction" priority="-1">
+        <lane id="main_to_junction_0" index="0" speed="13.89" length="26.00" shape="0.00,48.40 26.00,48.40"/>
+    </edge>
+    <edge id="side_to_junction" from="side_start" to="junction" priority="-1">
+        <lane id="side_to_junction_0" index="0" speed="13.89" length="42.80" shape="31.60,0.00 31.60,42.80"/>
+    </edge>
+
+    <junction id="junction" type="right_before_left" x="30.00" y="50.00" incLanes="side_to_junction_0 main_to_junction_0" intLanes=":junction_0_0 :junction_1_0" shape="37.20,50.00 37.20,46.80 34.98,46.36 34.20,45.80 33.64,45.02 33.31,44.02 33.20,42.80 30.00,42.80 29.56,45.02 29.00,45.80 28.22,46.36 27.22,46.69 26.00,46.80 26.00,50.00">
+        <request index="0" response="00" foes="10" cont="0"/>
+        <request index="1" response="01" foes="01" cont="0"/>
+    </junction>
+    <junction id="main_end" type="dead_end" x="70.00" y="50.00" incLanes="junction_to_main_0" intLanes="" shape="70.00,46.80 70.00,50.00"/>
+    <junction id="main_start" type="dead_end" x="0.00" y="50.00" incLanes="" intLanes="" shape="0.00,50.00 0.00,46.80"/>
+    <junction id="side_start" type="dead_end" x="30.00" y="0.00" incLanes="" intLanes="" shape="30.00,0.00 33.20,0.00"/>
+
+    <connection from="main_to_junction" to="junction_to_main" fromLane="0" toLane="0" via=":junction_1_0" dir="s" state="="/>
+    <connection from="side_to_junction" to="junction_to_main" fromLane="0" toLane="0" via=":junction_0_0" dir="r" state="M"/>
+
+    <connection from=":junction_0" to="junction_to_main" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":junction_1" to="junction_to_main" fromLane="0" toLane="0" dir="s" state="M"/>
+
+</net>

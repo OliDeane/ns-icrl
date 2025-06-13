@@ -1,0 +1,10 @@
+<routes>
+    <vType accel="1.0" decel="5.0" id="Car" length="2.0" maxSpeed="100.0" sigma="0.0" />
+    
+    <route id="main" edges="main_to_junction junction_to_main"/>
+    <route id="side" edges="side_to_junction junction_to_main"/>
+
+    <flow id="main" color="1,0,0"  begin="0" end= "7200" probability="0.1" type="Car" route="main"/>
+    <flow id="side" color="0,1,0"  begin="0" end= "7200" probability="0.1" type="Car" route="side"/>
+    
+</routes>

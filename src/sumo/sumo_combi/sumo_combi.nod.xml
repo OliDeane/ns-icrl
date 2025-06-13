@@ -1,0 +1,17 @@
+<nodes>
+    <node id="w0" x="0.0" y="80.0" />
+    <node id="w1" x="40.0" y="80.0"  type="right_before_left"/>
+    <node id="e1" x="120.0" y="80.0"  type="right_before_left"/>
+    <node id="e0" x="160.0" y="80.0" />
+    <node id="s0" x="80.0" y="0.0" />
+    <node id="s1" x="80.0" y="40.0"  type="right_before_left"/>
+    <node id="n0" x="80.0" y="160.0" />
+    <node id="n1" x="80.0" y="120.0"  type="right_before_left" />
+
+    <node id="ne" x="120.0" y="120.0" />
+    <node id="nw" x="40.0" y="120.0" />
+    <node id="se" x="120.0" y="40.0" />
+    <node id="sw" x="40.0" y="40.0" />
+    
+    <node id="junction" x="80.0" y="80.0" type="traffic_light" />
+</nodes>

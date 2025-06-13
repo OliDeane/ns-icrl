@@ -1,0 +1,8 @@
+<edges>
+    <edge from="main_left" to="junction" id="main_left_to_junction" />
+    <edge from="junction" to="main_left" id="junction_to_main_left" />
+    <edge from="main_right" to="junction" id="main_right_to_junction" />
+    <edge from="junction" to="main_right" id="junction_to_main_right" />
+    <edge from="side" to="junction" id="side_to_junction" />
+    <edge from="junction" to="side" id="junction_to_side" />
+</edges>

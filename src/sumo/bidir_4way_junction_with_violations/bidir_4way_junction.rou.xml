@@ -1,0 +1,34 @@
+<routes>
+    <vType accel="1.0" decel="5.0" id="Car" length="2.0" maxSpeed="100.0" sigma="0.0" jmDriveAfterRedTime="10.0"/>
+    
+    <route id="route12" edges="hor_left_to_junction junction_to_ver_up"/>
+    <route id="route13" edges="hor_left_to_junction junction_to_hor_right"/>
+    <route id="route14" edges="hor_left_to_junction junction_to_ver_down"/>
+
+    <route id="route21" edges="hor_right_to_junction junction_to_ver_down"/>
+    <route id="route23" edges="hor_right_to_junction junction_to_hor_left"/>
+    <route id="route24" edges="hor_right_to_junction junction_to_ver_up"/>
+
+    <route id="route31" edges="ver_down_to_junction junction_to_hor_left"/>
+    <route id="route32" edges="ver_down_to_junction junction_to_ver_up"/>
+    <route id="route34" edges="ver_down_to_junction junction_to_hor_right"/>
+
+    <route id="route41" edges="ver_up_to_junction junction_to_hor_right"/>
+    <route id="route42" edges="ver_up_to_junction junction_to_ver_down"/>
+    <route id="route43" edges="ver_up_to_junction junction_to_hor_left"/>
+
+    <!--<vehicle depart="1" id="veh0" route="route12" type="Car" />-->
+
+    <flow id="type12" color="1,0,0"  begin="0" end= "7200" probability="0.01" type="Car" route="route12" />
+    <flow id="type13" color="1,0,0"  begin="0" end= "7200" probability="0.01" type="Car" route="route13" />
+    <flow id="type14" color="1,0,0"  begin="0" end= "7200" probability="0.01" type="Car" route="route14" />
+    <flow id="type21" color="0,1,0"  begin="0" end= "7200" probability="0.01" type="Car" route="route21" />
+    <flow id="type23" color="0,1,0"  begin="0" end= "7200" probability="0.01" type="Car" route="route23" />
+    <flow id="type24" color="0,1,0"  begin="0" end= "7200" probability="0.01" type="Car" route="route24" />
+    <flow id="type31" color="0,0,1"  begin="0" end= "7200" probability="0.01" type="Car" route="route31" />
+    <flow id="type32" color="0,0,1"  begin="0" end= "7200" probability="0.01" type="Car" route="route32" />
+    <flow id="type34" color="0,0,1"  begin="0" end= "7200" probability="0.01" type="Car" route="route34" />
+    <flow id="type41" color="1,1,0"  begin="0" end= "7200" probability="0.01" type="Car" route="route41" />
+    <flow id="type42" color="1,1,0"  begin="0" end= "7200" probability="0.01" type="Car" route="route42" />
+    <flow id="type43" color="1,1,0"  begin="0" end= "7200" probability="0.01" type="Car" route="route43" />
+</routes>
