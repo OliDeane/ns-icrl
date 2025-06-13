@@ -13,23 +13,7 @@ This repository contains the official implementation of the paper **"Neuro-Symbo
 
 To install SWI-Prolog, follow the instructions [here](https://www.swi-prolog.org/Download.html).
 
-### Installation
-
-1. Clone the repository:
-
-    ```bash
-    git clone https://github.com/yourusername/nsicrl.git
-    cd nsicrl
-    ```
-
-2. (Optional) Create a virtual environment:
-
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows: venv\Scripts\activate
-    ```
-
-3. Install Python dependencies:
+Install Python dependencies:
 
     ```bash
     pip install -r requirements.txt
@@ -72,25 +56,13 @@ Each iteration of the main loop performs the following steps:
 
 ---
 
-## Project Structure
-
-```
-nsicrl/
-├── src/               # Source code and main logic
-├── requirements.txt   # Python dependencies
-├── README.md          # This file
-└── ...
-```
-
----
-
-## 📄 License
+## License
 
 This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 📣 Citation
+## Citation
 
 If you use this code, please cite the paper:
 
@@ -104,9 +76,7 @@ If you use this code, please cite the paper:
 }
 ```
 
----
-
-## 📌 Notes
+## Notes
 
 - Figures are generated automatically in `figures/`.
 - All arguments are defaulted for convenience.
